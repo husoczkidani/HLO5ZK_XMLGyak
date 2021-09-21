@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konferencia>
+
+	<cim>XML konferencia</cim>
+
+	<hallgatok>
+		<hallgato>
+			<nev> Husóczki Dániel </nev>
+			<lakcim> 3944 Károlyfalva </lakcim>
+		</hallgato>
+	</hallgatok>
+
+	<helszin> Miskolci Egyetem </helyszin>
+
+	<eloado>
+		<nev> Tanár Úr </nev>
+		<adoszam> 123456789 </adoszam>
+		<lakcim> Valahol a világon </lakcim>
+	</eloado>
+
+	<datum> 2021.Szeptember 21. </datum>
+
+</konferencia>
