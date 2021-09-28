@@ -1,0 +1,6 @@
+<!ELEMENT konyvek (konyv*)>
+<!ELEMENT konyv (cim,kiadasiev,kiado,szerzo+)>
+<!ELEMENT cim (#PCDATA)>
+<!ELEMENT kiadasiev (#PCDATA)>
+<!ELEMENT kiado (#PCDATA)>
+<!ELEMENT szerzo (#PCDATA)>
