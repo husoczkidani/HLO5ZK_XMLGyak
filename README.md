@@ -1,3 +1,3 @@
 # Husóczki Dániel (HLO5ZK) XML Gyakorlati feladatok
 
-Gyakorlati feladatok helye XML adatkezelés gyaorlatok órára
+Gyakorlati feladatok helye XML adatkezelés gyakorlatok órára
