@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE konyv SYSTEM "HD_konyv.dtd">
 <konyvek>
-	<konyv>
-		<cim>cím1</cim>
+	<konyv id="1" >
+		<cim>Clean Code</cim>
 		<kiadasiev>1999. szeptember</kiadasiev>
 		<kiado>valakik 1</kiado>
 		<szerzo>valaki 1 1</szerzo>
 		<szerzo>valaki 1 2</szerzo>
 	</konyv>
 	
-	<konyv>
-		<cim>cím2</cim>
+	<konyv id="2" >
+		<cim>Clean Architecture</cim>
 		<kiadasiev>1987. szeptember</kiadasiev>
 		<kiado>valakik 2</kiado>
 		<szerzo>valaki 2</szerzo>
