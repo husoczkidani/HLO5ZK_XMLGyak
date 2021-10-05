@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dolgozok [
+    <!ELEMENT dolgozok (dolgozo*)>
+    <!ELEMENT dolgozo (kod, nev, fizetes)>
+        <!ELEMENT kod ANY>
+            <!ATTLIST kod id CDATA #REQUIRED>
+        <!ELEMENT nev (#PCDATA)>
+        <!ELEMENT fizetes (#PCDATA)>
+]>
+<dolgozok>
+    <dolgozo>
+        <kod id="1"/>
+        <nev>Dani</nev>
+        <fizetes>500000</fizetes>
+    </dolgozo>
+    
+    <dolgozo>
+        <kod id="2"/>
+        <nev>Lajos</nev>
+        <fizetes>300000</fizetes>
+    </dolgozo>
+</dolgozok>
