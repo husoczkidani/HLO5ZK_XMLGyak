@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE konyv SYSTEM "HD_konyv.dtd">
+<!DOCTYPE konyvek SYSTEM "HD_konyv.dtd">
 <konyvek>
 	<konyv id="1" >
 		<cim>Clean Code</cim>
-		<kiadasiev>1999. szeptember</kiadasiev>
-		<kiado>valakik 1</kiado>
-		<szerzo>valaki 1 1</szerzo>
-		<szerzo>valaki 1 2</szerzo>
+		<kiadasiev>2008. augusztus 1.</kiadasiev>
+		<kiado>Robert C. Martin</kiado>
+		<szerzo>Robert C. Martin</szerzo>
+        <abstract>Book for coding.</abstract>
 	</konyv>
 	
 	<konyv id="2" >
 		<cim>Clean Architecture</cim>
-		<kiadasiev>1987. szeptember</kiadasiev>
-		<kiado>valakik 2</kiado>
-		<szerzo>valaki 2</szerzo>
+		<kiadasiev>2017</kiadasiev>
+		<kiado>Robert C. Martin</kiado>
+		<szerzo>Robert C. Martin</szerzo>
 	</konyv>
 </konyvek>
