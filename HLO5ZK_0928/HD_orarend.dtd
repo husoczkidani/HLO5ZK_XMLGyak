@@ -1,0 +1,16 @@
+<!ELEMENT orarend (napok*)>
+    <!ELEMENT napok (ora*)>
+        <!ELEMENT ora (targy, idopont, helyszin, oktato, szak)>
+            <!ELEMENT targy (#PCDATA)>
+            <!ELEMENT idopont (nap, tol, ig)>
+                <!ELEMENT nap (#PCDATA)>
+                <!ELEMENT tol (#PCDATA)>
+                <!ELEMENT ig (#PCDATA)>
+            <!ELEMENT helyszin (#PCDATA)>
+            <!ELEMENT oktato (#PCDATA)>
+            <!ELEMENT szak (#PCDATA)>
+        <!ATTLIST napok id CDATA #REQUIRED>
+        <!ATTLIST napok nev CDATA #REQUIRED>
+        <!ATTLIST ora id CDATA #REQUIRED>
+        <!ATTLIST ora típus CDATA #REQUIRED>
+                    
