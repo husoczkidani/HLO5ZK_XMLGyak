@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="HD_orarend.xsd">
+    <napok id="1" nev="Hétfő">
+	    <ora id="1" típus="elmelet" >
+		    <targy>Algoritmusok és Viszgálatuk elmélet</targy>
+		    <idopont>
+			    <nap>Hétfő</nap>
+			    <tol>8:00</tol>
+			    <ig>10:00</ig>
+		    </idopont>
+		    <helyszin>A3 313.</helyszin>
+		    <oktato> Dr. Házy Attila</oktato>
+		    <szak>Programtervező Informatika</szak>
+	    </ora>
+
+        <ora id="2" típus="gyakorlat" >
+		    <targy>Algoritmusok és Viszgálatuk gyakorlat</targy>
+		    <idopont>
+			    <nap>Hétfő</nap>
+			    <tol>10:00</tol>
+			    <ig>12:00</ig>
+		    </idopont>
+		    <helyszin>A3 313.</helyszin>
+		    <oktato> Dr. Házy Attila</oktato>
+		    <szak>Programtervező Informatika</szak>
+	    </ora>
+
+        <ora id="3" típus="elmelet" >
+		    <targy>WEB technologiak elmélet</targy>
+		    <idopont>
+			    <nap>Hétfő</nap>
+			    <tol>12:00</tol>
+			    <ig>14:00</ig>
+		    </idopont>
+		    <helyszin>A1 305.</helyszin>
+		    <oktato>Agárdi Anita</oktato>
+		    <szak>Programtervező Informatika</szak>
+	    </ora>
+
+        <ora id="4" típus="elmélet" >
+		    <targy>Mesterséges Intelligencia elmélet</targy>
+		    <idopont>
+			    <nap>Hétfő</nap>
+			    <tol>14:00</tol>
+			    <ig>17:00</ig>
+		    </idopont>
+		    <helyszin>XXXII.</helyszin>
+		    <oktato>Dr. Dudás László</oktato>
+		    <szak>Programtervező Informatika</szak>
+	    </ora>
+    </napok>
+
+    <napok id="2" nev="Kedd">
+        <ora id="5" típus="elmélet" >
+		    <targy>XML adatkezelés elmélet</targy>
+		    <idopont>
+			    <nap>Kedd</nap>
+			    <tol>12:00</tol>
+			    <ig>14:00</ig>
+		    </idopont>
+		    <helyszin>I.</helyszin>
+		    <oktato>Dr. Bednarik László</oktato>
+		    <szak>Programtervező Informatika</szak>
+	    </ora>
+
+        <ora id="6" típus="gyakorlat" >
+		    <targy>XML adatkezelés gyakorlat</targy>
+		    <idopont>
+			    <nap>Kedd</nap>
+			    <tol>14:00</tol>
+			    <ig>16:00</ig>
+		    </idopont>
+		    <helyszin>Inf. 103.</helyszin>
+		    <oktato>Dr. Bednarik László</oktato>
+		    <szak>Programtervező Informatika</szak>
+	    </ora>
+
+        <ora id="7" típus="elmélet" >
+		    <targy>Angol nyelvvizsga felkészítő</targy>
+		    <idopont>
+			    <nap>Kedd</nap>
+			    <tol>16:00</tol>
+			    <ig>18:00</ig>
+		    </idopont>
+		    <helyszin>A1 226.</helyszin>
+		    <oktato>Dorkó Dóra</oktato>
+		    <szak>Programtervező Informatika</szak>
+	    </ora>
+
+        <ora id="8" típus="gyakorlat" >
+		    <targy>WEB technológiák gyakorlat</targy>
+		    <idopont>
+			    <nap>Kedd</nap>
+			    <tol>18:00</tol>
+			    <ig>20:00</ig>
+		    </idopont>
+		    <helyszin>Inf. 103.</helyszin>
+		    <oktato>Agárdi Anita</oktato>
+		    <szak>Programtervező Informatika</szak>
+	    </ora>
+    </napok>
+
+    <napok id="3" nev="Szerda">
+        <ora id="9" típus="gyakorlat" >
+		    <targy>Mesterséges Intelligencia gyakorlat</targy>
+		    <idopont>
+			    <nap>Szerda</nap>
+			    <tol>9:00</tol>
+			    <ig>10:00</ig>
+		    </idopont>
+		    <helyszin>Inf. 15.</helyszin>
+		    <oktato>Dr. Dudás László</oktato>
+		    <szak>Programtervező Informatika</szak>
+	    </ora>
+
+        <ora id="10" típus="elmélet" >
+		    <targy>Vállalati Információs Rendszerek elmélet</targy>
+		    <idopont>
+			    <nap>Szerda</nap>
+			    <tol>16:00</tol>
+			    <ig>18:00</ig>
+		    </idopont>
+		    <helyszin>Inf. 103.</helyszin>
+		    <oktato>Dr. Sasvári Péter</oktato>
+		    <szak>Programtervező Informatika</szak>
+	    </ora>
+
+        <ora id="11" típus="gyakorlat" >
+		    <targy>Vállalati Információs Rendszerek gyakorlat</targy>
+		    <idopont>
+			    <nap>Szerda</nap>
+			    <tol>18:00</tol>
+			    <ig>20:00</ig>
+		    </idopont>
+		    <helyszin>Inf. 103.</helyszin>
+		    <oktato>Dr. Sasvári Péter</oktato>
+		    <szak>Programtervező Informatika</szak>
+	    </ora>
+    </napok>
+</orarend>
