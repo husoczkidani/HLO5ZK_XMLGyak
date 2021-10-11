@@ -7,11 +7,26 @@
                 <xs:element name="film" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="rendezo" type="xs:string" maxOccurs="unbounded"/>
-                            <xs:element name="szinesz" type="xs:string"/>
-                            <xs:element name="iro" type="xs:string"/>
+                            <xs:element name="rendezo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="id" type="xs:string" use="required"/>
+                                    <xs:attribute name="nev" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="szinesz">
+                                <xs:complexType>
+                                    <xs:attribute name="id" type="xs:string" use="required"/>
+                                    <xs:attribute name="nev" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="iro" >
+                                <xs:complexType>
+                                    <xs:attribute name="id" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:sequence>
                         <xs:attribute name="id" type="xs:string" use="required"/>
+                        <xs:attribute name="mufaj" type="xs:string"/>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
