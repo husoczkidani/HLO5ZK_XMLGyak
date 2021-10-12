@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+    <xs:element name="orarend"> 
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="napok" type="napokType"  minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="napokType">
+        <xs:sequence>
+            <xs:element name="ora" type="oraType" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer" use="required"/>
+        <xs:attribute name="nev" type="napType" default="Hétfő"/>
+    </xs:complexType>
+
+    <xs:complexType name="oraType">
+        <xs:sequence>
+            <xs:element name="targy" type="xs:string"/>
+            <xs:element name="idopont" type="idopontType"/>
+            <xs:element name="helyszin" type="xs:string"/>
+            <xs:element name="oktato" type="xs:string"/>
+            <xs:element name="szak" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer" use="required"/>
+        <xs:attribute name="típus" type="oratipusType"/>
+    </xs:complexType>
+
+    <xs:simpleType name="oratipusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="elmelet"/>
+            <xs:enumeration value="gyakorlat"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="idopontType">
+        <xs:sequence>
+            <xs:element name="nap" type="napType"/>
+            <xs:element name="tol" type="tolType"/>
+            <xs:element name="ig" type="igType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="napType">
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Hétfő"/>
+                <xs:enumeration value="Kedd"/>
+                <xs:enumeration value="Szerda"/>
+                <xs:enumeration value="Csütörtök"/>
+                <xs:enumeration value="Péntek"/>
+            </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tolType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="8"/>
+            <xs:maxInclusive value="18"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="igType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="10"/>
+            <xs:maxInclusive value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
