@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE szemelyek SYSTEM "szemelyekHLO5ZK.dtd">
+-->
+
+<szemelyek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="szemelyekHLO5ZK.xsd">
+    <szemely id="01">
+        <nev>Husóczki Dániel</nev>
+        <kor>21</kor>
+        <varos>Sátoraljaújhely</varos>
+    </szemely>
+
+    <szemely id="02">
+        <nev>Erő Jenő</nev>
+        <kor>22</kor>
+        <varos>Miskolc</varos>
+    </szemely>
+
+    <szemely id="03">
+        <nev>Példa Péter</nev>
+        <kor>21</kor>
+        <varos>Miskolc</varos>
+    </szemely>
+</szemelyek>
