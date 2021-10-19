@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="HD_nevjegykartya.xsd">
+    <nevjegykartya>
+        <nev>Husóczki Dániel</nev>
+        <ceg>
+            <nev>evoSoft</nev>
+            <cim>
+                <iranyitoszam>3535</iranyitoszam>
+                <varos>Miskolc</varos>
+                <utca>Szeles utca</utca>
+                <hazszam>4</hazszam>
+            </cim>
+            <telefonszam>0647000000</telefonszam>
+            <weblap>www.evosoft.com</weblap>
+        </ceg>
+        <beosztas>Diák</beosztas>
+        <telefonszam>06203982938</telefonszam>
+        <email>husoczkidaniel@gmail.com</email>
+    </nevjegykartya>
+
+    <nevjegykartya>
+        <nev>Erő Jenő</nev>
+        <ceg>
+            <nev>Borsdon Volán</nev>
+            <cim>
+                <iranyitoszam>3540</iranyitoszam>
+                <varos>Miskolc</varos>
+                <utca>Búza tér</utca>
+                <hazszam>11</hazszam>
+            </cim>
+            <telefonszam>0647333555</telefonszam>
+            <weblap>www.bkv.com</weblap>
+        </ceg>
+        <beosztas>Sofőr</beosztas>
+        <telefonszam>06209864893</telefonszam>
+        <email>erojeno@gmail.com</email>
+    </nevjegykartya>
+</nevjegykartyak>
