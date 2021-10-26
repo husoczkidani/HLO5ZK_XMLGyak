@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<szemelyek>
+    <szemely id="01">
+        <nev>Husóczki Dániel</nev>
+        <kor>21</kor>
+        <varos>Sátoraljaújhely</varos>
+    </szemely>
+
+    <szemely id="02">
+        <nev>Erő Jenő</nev>
+        <kor>22</kor>
+        <varos>Miskolc</varos>
+    </szemely>
+
+    <szemely id="03">
+        <nev>Példa Péter</nev>
+        <kor>21</kor>
+        <varos>Miskolc</varos>
+    </szemely>
+</szemelyek>
