@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="usersHLO5ZK.xsd">
+    <user id="01">
+        <firstname>Husóczki</firstname>
+        <lastname>Dániel</lastname>
+        <profession>Programozó</profession>
+    </user>
+    <user id="02">
+        <firstname>Mézga</firstname>
+        <lastname>Géza</lastname>
+        <profession>Urutazó</profession>
+    </user>
+    <user id="03">
+        <firstname>Ero</firstname>
+        <lastname>Jeno</lastname>
+        <profession>Sportoló</profession>
+    </user>
+</users>

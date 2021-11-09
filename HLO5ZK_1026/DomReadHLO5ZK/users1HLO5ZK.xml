@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users xmlns="domhlo5zk">
+    <user id="01">
+        <firstname>Husóczki</firstname>
+        <lastname>Dániel</lastname>
+        <profession>Programozó</profession>
+    </user>
+    <user id="02">
+        <firstname>Mézga</firstname>
+        <lastname>Géza</lastname>
+        <profession>Urutazó</profession>
+    </user>
+    <user id="03">
+        <firstname>Ero</firstname>
+        <lastname>Jeno</lastname>
+        <profession> Sportoló</profession>
+    </user>
+</users>
