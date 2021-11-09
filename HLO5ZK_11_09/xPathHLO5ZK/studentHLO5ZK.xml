@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="studentHLO5ZK.xsd">
+	<student id="01">
+		<keresztnev>Daniel</keresztnev>
+		<vezeteknev>Husoczki</vezeteknev>
+		<becenev>Dani</becenev>
+		<kor>21</kor>
+	</student>
+	<student id="02">
+		<keresztnev>Jeno</keresztnev>
+		<vezeteknev>Ero</vezeteknev>
+		<becenev>Jani</becenev>
+		<kor>22</kor>
+	</student>
+	<student id="03">
+		<keresztnev>Geza</keresztnev>
+		<vezeteknev>Mezga</vezeteknev>
+		<becenev>Gezus</becenev>
+		<kor>23</kor>
+	</student>
+</class>
