@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="studentHLO5ZK.xsl"?>
+<class>
+	<student id="01">
+		<vezeteknev>Husoczki</vezeteknev>
+		<keresztnev>Daniel</keresztnev>
+		<becenev>Dani</becenev>
+		<kor>21</kor>
+	</student>
+	<student id="02">
+		<vezeteknev>Ero</vezeteknev>
+		<keresztnev>Jeno</keresztnev>
+        <becenev>Jani</becenev>
+		<kor>22</kor>
+	</student>
+	<student id="03">
+		<vezeteknev>Mezga</vezeteknev>
+		<keresztnev>Geza</keresztnev>
+		<becenev>Gezus</becenev>
+		<kor>23</kor>
+	</student>
+</class>
