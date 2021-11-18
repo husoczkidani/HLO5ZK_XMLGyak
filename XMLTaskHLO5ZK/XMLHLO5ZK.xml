@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rendelesek>
+
+    <!-- Könyvesboltok -->
+    <konyvesbolt Kb_Id="kb01">
+        <Kb_nev>Szinvapark Líra Könyváruház</Kb_nev>
+        <Nyitvatartas>Hétfő</Nyitvatartas>
+        <Nyitvatartas>Kedd</Nyitvatartas>
+        <Nyitvatartas>Szerda</Nyitvatartas>
+        <Nyitvatartas>Csütörtök</Nyitvatartas>
+        <Cim>
+            <IrSz>3530</IrSz>
+            <Telepules>Miskolc</Telepules>
+            <U_Hsz>Bajcsky-Zsilinszky utca 4</U_Hsz>
+        </Cim>
+    </konyvesbolt>
+
+    <konyvesbolt Kb_Id="kb02">
+        <Kb_nev>Azária Könyvesbolt</Kb_nev>
+        <Nyitvatartas>Hétfő</Nyitvatartas>
+        <Nyitvatartas>Kedd</Nyitvatartas>
+        <Nyitvatartas>Szerda</Nyitvatartas>
+        <Nyitvatartas>Csütörtök</Nyitvatartas>
+        <Nyitvatartas>Péntek</Nyitvatartas>
+        <Cim>
+            <IrSz>3950</IrSz>
+            <Telepules>Sárospatak</Telepules>
+            <U_Hsz>Rákóczki út 9</U_Hsz>
+        </Cim>
+    </konyvesbolt>
+
+    <konyvesbolt Kb_Id="kb03">
+        <Kb_nev>Rongykutya Könyvesbolt és Kávézó</Kb_nev>
+        <Nyitvatartas>Csütörtök</Nyitvatartas>
+        <Nyitvatartas>Péntek</Nyitvatartas>
+        <Nyitvatartas>Szombat</Nyitvatartas>
+        <Cim>
+            <IrSz>3980</IrSz>
+            <Telepules>Sátoraljaújhely</Telepules>
+            <U_Hsz>Kossuth Lajos tér 14</U_Hsz>
+        </Cim>
+    </konyvesbolt>
+
+    <!-- Rendelések -->
+    <Rendeles Rend_Id="rend01">
+        <Kb_Id>kb01</Kb_Id>
+        <Beszall_neve>Jason Statham</Beszall_neve>
+        <Rend_Datum>10/10/2020</Rend_Datum>
+        <HatarId>10/22/2020</HatarId>
+    </Rendeles>
+
+    <Rendeles Rend_Id="rend02">
+        <Kb_Id>kb02</Kb_Id>
+        <Beszall_neve>Lakatos József</Beszall_neve>
+        <Rend_Datum>10/11/2020</Rend_Datum>
+        <HatarId>10/23/2020</HatarId>
+    </Rendeles>
+
+    <Rendeles Rend_Id="rend03">
+        <Kb_Id>kb01</Kb_Id>
+        <Beszall_neve>Jason Statham</Beszall_neve>
+        <Rend_Datum>10/23/2020</Rend_Datum>
+        <HatarId>11/15/2020</HatarId>
+    </Rendeles>
+
+    <Rendeles Rend_Id="rend04">
+        <Kb_Id>kb3</Kb_Id>
+        <Beszall_neve>Békülő Béla</Beszall_neve>
+        <Rend_Datum>11/19/2020</Rend_Datum>
+        <HatarId>11/30/2020</HatarId>
+    </Rendeles>
+
+    <Rendeles Rend_Id="rend05">
+        <Kb_Id>kb1</Kb_Id>
+        <Beszall_neve>Cérna Cecília</Beszall_neve>
+        <Rend_Datum>11/20/2020</Rend_Datum>
+        <HatarId>11/30/2020</HatarId>
+    </Rendeles>
+
+    <!-- Része kapcsolatok -->
+    <Resze ReszeId="r01">
+        <Ear>1999</Ear>
+        <Menny>25</Menny>
+        <Rend_Id>rend01</Rend_Id>
+        <ISBN>9788175257622</ISBN>
+    </Resze>
+
+    <Resze ReszeId="r02">
+        <Ear>2199</Ear>
+        <Menny>30</Menny>
+        <Rend_Id>rend02</Rend_Id>
+        <ISBN>9788875123422</ISBN>
+    </Resze>
+    
+    <Resze ReszeId="r03">
+        <Ear>2499</Ear>
+        <Menny>30</Menny>
+        <Rend_Id>rend02</Rend_Id>
+        <ISBN>9782871235722</ISBN>
+    </Resze>
+
+    <Resze ReszeId="r04">
+        <Ear>2999</Ear>
+        <Menny>10</Menny>
+        <Rend_Id>rend03</Rend_Id>
+        <ISBN>9786150064222</ISBN>
+    </Resze>
+
+    <Resze ReszeId="r05">
+        <Ear>2999</Ear>
+        <Menny>15</Menny>
+        <Rend_Id>rend03</Rend_Id>
+        <ISBN>9786150064222</ISBN>
+    </Resze>
+
+    <Resze ReszeId="r06">
+        <Ear>2499</Ear>
+        <Menny>10</Menny>
+        <Rend_Id>rend04</Rend_Id>
+        <ISBN>9782871235722</ISBN>
+    </Resze>
+
+    <Resze ReszeId="r07">
+        <Ear>1999</Ear>
+        <Menny>10</Menny>
+        <Rend_Id>rend04</Rend_Id>
+        <ISBN>9788175257622</ISBN>
+    </Resze>
+
+    <Resze ReszeId="r08">
+        <Ear>1999</Ear>
+        <Menny>15</Menny>
+        <Rend_Id>rend05</Rend_Id>
+        <ISBN>9788175257622</ISBN>
+    </Resze>
+
+    <Resze ReszeId="r09">
+        <Ear>2999</Ear>
+        <Menny>20</Menny>
+        <Rend_Id>rend05</Rend_Id>
+        <ISBN>9786150064222</ISBN>
+    </Resze>
+
+    <!-- Könyvek -->
+    <Konyv ISBN="9788175257622">
+        <Kiad_datum>11/15/2020</Kiad_datum>
+        <Cim>Minden az XMlről</Cim>
+        <Oldalszam>420</Oldalszam>
+        <Szerzo_Id>sz03</Szerzo_Id>
+    </Konyv>
+
+    <Konyv ISBN="9786150064222">
+        <Kiad_datum>05/23/2018</Kiad_datum>
+        <Cim>Miskolc mindig várni fog</Cim>
+        <Oldalszam>377</Oldalszam>
+        <Szerzo_Id>sz02</Szerzo_Id>
+    </Konyv>
+
+    <Konyv ISBN="9789631366822">
+        <Kiad_datum>01/30/2020</Kiad_datum>
+        <Cim>Láthatatlan Háború</Cim>
+        <Oldalszam>304</Oldalszam>
+        <Szerzo_Id>sz02</Szerzo_Id>
+    </Konyv>
+
+    <Konyv ISBN="9788875123422">
+        <Kiad_datum>08/23/2020</Kiad_datum>
+        <Cim>Adobe rejtelmei</Cim>
+        <Oldalszam>256</Oldalszam>
+        <Szerzo_Id>sz01</Szerzo_Id>
+    </Konyv>
+
+    <Konyv ISBN="9782871235722">
+        <Kiad_datum>08/20/2021</Kiad_datum>
+        <Cim>A Fényképészet tudomány</Cim>
+        <Oldalszam>192</Oldalszam>
+        <Szerzo_Id>sz01</Szerzo_Id>
+    </Konyv>
+
+    <Konyv ISBN="9782394257829">
+        <Kiad_datum>11/19/2020</Kiad_datum>
+        <Cim>A Miskolci egyetem rejtelmei</Cim>
+        <Oldalszam>239</Oldalszam>
+        <Szerzo_Id>sz03</Szerzo_Id>
+    </Konyv>
+
+    <!-- Szerzők -->
+    <Szerzo Szerzo_Id="sz01">
+        <Szerzo_nev>Hochvárt Benjámin</Szerzo_nev>
+        <Elerhetoseg>
+            <Telszam>065231277</Telszam>
+            <Telszam>0647000670</Telszam>
+            <Email>hochvart.beni@gmail.com</Email>
+        </Elerhetoseg>
+    </Szerzo>
+    
+    <Szerzo Szerzo_Id="sz02">
+        <Szerzo_nev>Yvonne Hofstetter</Szerzo_nev>
+        <Elerhetoseg>
+            <Telszam>064563298</Telszam>
+            <Email>yvonne.hof@email.com</Email>
+        </Elerhetoseg>
+    </Szerzo>
+    
+    <Szerzo Szerzo_Id="sz03">
+        <Szerzo_nev>Husóczki Dániel</Szerzo_nev>
+        <Elerhetoseg>
+            <Telszam>06203982938</Telszam>
+            <Telszam>0647655183</Telszam>
+            <Email>husoczkidaniel@gmail.com</Email>
+        </Elerhetoseg>
+    </Szerzo>
+
+</rendelesek>
