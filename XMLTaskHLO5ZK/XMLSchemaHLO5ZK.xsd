@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+
+    <xs:element name="Rendeles">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Konyvesbolt" type="konyvesboltType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Rendeles" type="rendelesType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Resze" type="reszeType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Konyv" type="konyvType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Szerzo" type="szerzoType" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="konyvesboltType">
+        <xs:sequence>
+            <xs:element name="Kb_nev" type="xs:string"/>
+            <xs:element name="Nyitvatartas" type="xs:string" minOccurs="1" maxOccurs="7"/>
+            <xs:element name="Cim" type="cimType"/>
+        </xs:sequence>
+        <xs:attribute name="Kb_Id" type="idType" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="cimType">
+        <xs:sequence>
+            <xs:element name="IrSz" type="irszType"/>
+            <xs:element name="Telepules" type="xs:string"/>
+            <xs:element name="U_Hsz" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="irszType">
+        <xs:restriction base="xs:integer">
+            <xs:pattern value="\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="rendelesType">
+        <xs:sequence>
+            <xs:element name="Kb_Id" type="idType"/>
+            <xs:element name="Beszall_neve" type="xs:string"/>
+            <xs:element name="Rend_Datum" type="xs:string"/>
+            <xs:element name="HatarId" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="Rend_Id" type="idType" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="reszeType">
+        <xs:sequence>
+            <xs:element name="Ear" type="xs:integer"/>
+            <xs:element name="Menny" type="xs:integer"/>
+            <xs:element name="Rend_Id" type="idType" />
+            <xs:element name="ISBN" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="ReszeId" type="idType" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="konyvType">
+        <xs:sequence>
+            <xs:element name="Kiad_datum" type="xs:string"/>
+            <xs:element name="Cim" type="xs:string"/>
+            <xs:element name="Oldalszam" type="xs:integer"/>
+            <xs:element name="Szerzo_Id" type="idType"/>
+        </xs:sequence>
+        <xs:attribute name="ISBN" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="szerzoType">
+        <xs:sequence>
+            <xs:element name="Szerzo_nev" type="xs:string"/>
+            <xs:element name="Elerhetoseg" type="elerhetosegType"/>
+        </xs:sequence>
+        <xs:attribute name="Szerzo_Id" type="idType" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="elerhetosegType">
+        <xs:sequence>
+            <xs:element name="Telszam" type="telszamType"  maxOccurs="unbounded"/>
+            <xs:element name="Email" type="emailType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="telszamType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}-\d{2}-\d{3}-\d{2}-\d{2}"/>
+            <xs:pattern value="\d{2}-\d{2}-\d{3}-\d{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="emailType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[\w.]+@\w+\.\w+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="idType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([a-zA-Z])*[0-9][0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

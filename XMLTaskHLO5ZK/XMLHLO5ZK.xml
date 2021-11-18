@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<rendelesek>
+<Rendeles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="XMLSchemaHLO5ZK.xsd">
 
     <!-- Könyvesboltok -->
-    <konyvesbolt Kb_Id="kb01">
+    <Konyvesbolt Kb_Id="kb01">
         <Kb_nev>Szinvapark Líra Könyváruház</Kb_nev>
         <Nyitvatartas>Hétfő</Nyitvatartas>
         <Nyitvatartas>Kedd</Nyitvatartas>
@@ -14,9 +15,9 @@
             <Telepules>Miskolc</Telepules>
             <U_Hsz>Bajcsky-Zsilinszky utca 4</U_Hsz>
         </Cim>
-    </konyvesbolt>
+    </Konyvesbolt>
 
-    <konyvesbolt Kb_Id="kb02">
+    <Konyvesbolt Kb_Id="kb02">
         <Kb_nev>Azária Könyvesbolt</Kb_nev>
         <Nyitvatartas>Hétfő</Nyitvatartas>
         <Nyitvatartas>Kedd</Nyitvatartas>
@@ -28,9 +29,9 @@
             <Telepules>Sárospatak</Telepules>
             <U_Hsz>Rákóczki út 9</U_Hsz>
         </Cim>
-    </konyvesbolt>
+    </Konyvesbolt>
 
-    <konyvesbolt Kb_Id="kb03">
+    <Konyvesbolt Kb_Id="kb03">
         <Kb_nev>Rongykutya Könyvesbolt és Kávézó</Kb_nev>
         <Nyitvatartas>Csütörtök</Nyitvatartas>
         <Nyitvatartas>Péntek</Nyitvatartas>
@@ -40,7 +41,7 @@
             <Telepules>Sátoraljaújhely</Telepules>
             <U_Hsz>Kossuth Lajos tér 14</U_Hsz>
         </Cim>
-    </konyvesbolt>
+    </Konyvesbolt>
 
     <!-- Rendelések -->
     <Rendeles Rend_Id="rend01">
@@ -65,14 +66,14 @@
     </Rendeles>
 
     <Rendeles Rend_Id="rend04">
-        <Kb_Id>kb3</Kb_Id>
+        <Kb_Id>kb03</Kb_Id>
         <Beszall_neve>Békülő Béla</Beszall_neve>
         <Rend_Datum>11/19/2020</Rend_Datum>
         <HatarId>11/30/2020</HatarId>
     </Rendeles>
 
     <Rendeles Rend_Id="rend05">
-        <Kb_Id>kb1</Kb_Id>
+        <Kb_Id>kb01</Kb_Id>
         <Beszall_neve>Cérna Cecília</Beszall_neve>
         <Rend_Datum>11/20/2020</Rend_Datum>
         <HatarId>11/30/2020</HatarId>
@@ -189,8 +190,8 @@
     <Szerzo Szerzo_Id="sz01">
         <Szerzo_nev>Hochvárt Benjámin</Szerzo_nev>
         <Elerhetoseg>
-            <Telszam>065231277</Telszam>
-            <Telszam>0647000670</Telszam>
+            <Telszam>06-20-523-12-77</Telszam>
+            <Telszam>06-47-000-670</Telszam>
             <Email>hochvart.beni@gmail.com</Email>
         </Elerhetoseg>
     </Szerzo>
@@ -198,7 +199,7 @@
     <Szerzo Szerzo_Id="sz02">
         <Szerzo_nev>Yvonne Hofstetter</Szerzo_nev>
         <Elerhetoseg>
-            <Telszam>064563298</Telszam>
+            <Telszam>06-45-632-98-01</Telszam>
             <Email>yvonne.hof@email.com</Email>
         </Elerhetoseg>
     </Szerzo>
@@ -206,10 +207,10 @@
     <Szerzo Szerzo_Id="sz03">
         <Szerzo_nev>Husóczki Dániel</Szerzo_nev>
         <Elerhetoseg>
-            <Telszam>06203982938</Telszam>
-            <Telszam>0647655183</Telszam>
+            <Telszam>06-20-398-29-38</Telszam>
+            <Telszam>06-47-655-183</Telszam>
             <Email>husoczkidaniel@gmail.com</Email>
         </Elerhetoseg>
     </Szerzo>
 
-</rendelesek>
+</Rendeles>
