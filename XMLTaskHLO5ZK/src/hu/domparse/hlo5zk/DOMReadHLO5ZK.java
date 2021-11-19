@@ -19,7 +19,7 @@ public class DOMReadHLO5ZK {
 		
 		try {
 			
-			// XML file beolvas�sa DOM l�trehoz�sa
+			// XML file beolvasasa DOM letrehozasa
 			File xmlFile = new File("XMLHLO5ZK.xml");
 			DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
