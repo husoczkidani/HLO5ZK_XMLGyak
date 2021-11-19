@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Rendeles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<Rendelesek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="XMLSchemaHLO5ZK.xsd">
 
-    <!-- Könyvesboltok -->
     <Konyvesbolt Kb_Id="kb01">
         <Kb_nev>Szinvapark Líra Könyváruház</Kb_nev>
         <Nyitvatartas>Hétfő</Nyitvatartas>
@@ -43,7 +42,6 @@ xsi:noNamespaceSchemaLocation="XMLSchemaHLO5ZK.xsd">
         </Cim>
     </Konyvesbolt>
 
-    <!-- Rendelések -->
     <Rendeles Rend_Id="rend01">
         <Kb_Id>kb01</Kb_Id>
         <Beszall_neve>Jason Statham</Beszall_neve>
@@ -79,7 +77,6 @@ xsi:noNamespaceSchemaLocation="XMLSchemaHLO5ZK.xsd">
         <HatarId>11/30/2020</HatarId>
     </Rendeles>
 
-    <!-- Része kapcsolatok -->
     <Resze ReszeId="r01">
         <Ear>1999</Ear>
         <Menny>25</Menny>
@@ -143,7 +140,6 @@ xsi:noNamespaceSchemaLocation="XMLSchemaHLO5ZK.xsd">
         <ISBN>9786150064222</ISBN>
     </Resze>
 
-    <!-- Könyvek -->
     <Konyv ISBN="9788175257622">
         <Kiad_datum>11/15/2020</Kiad_datum>
         <Cim>Minden az XMlről</Cim>
@@ -186,7 +182,6 @@ xsi:noNamespaceSchemaLocation="XMLSchemaHLO5ZK.xsd">
         <Szerzo_Id>sz03</Szerzo_Id>
     </Konyv>
 
-    <!-- Szerzők -->
     <Szerzo Szerzo_Id="sz01">
         <Szerzo_nev>Hochvárt Benjámin</Szerzo_nev>
         <Elerhetoseg>
@@ -213,4 +208,4 @@ xsi:noNamespaceSchemaLocation="XMLSchemaHLO5ZK.xsd">
         </Elerhetoseg>
     </Szerzo>
 
-</Rendeles>
+</Rendelesek>

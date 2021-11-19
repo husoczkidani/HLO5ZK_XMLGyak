@@ -2,7 +2,7 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
 
-    <xs:element name="Rendeles">
+    <xs:element name="Rendelesek">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="Konyvesbolt" type="konyvesboltType" minOccurs="1" maxOccurs="unbounded"/>
