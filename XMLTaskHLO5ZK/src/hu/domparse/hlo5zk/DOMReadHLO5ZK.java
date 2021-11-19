@@ -17,6 +17,9 @@ public class DOMReadHLO5ZK {
 
 	public static void main(String[] args) {
 		
+		String[] tags = { "Konyvesbolt", "Rendeles", "Resze", "Konyv", "Szerzo" };
+		String[] ids = {"Kb_Id", "Rend_Id", "ReszeId", "ISBN", "Szerzo_Id"};
+		
 		try {
 			
 			// XML file beolvasasa DOM letrehozasa
@@ -30,9 +33,6 @@ public class DOMReadHLO5ZK {
 			System.out.println("Root element: " + doc.getDocumentElement().getNodeName() + "\n");
 			
 			//Elemek kiiratasa
-			String[] tags = { "Konyvesbolt", "Rendeles", "Resze", "Konyv", "Szerzo" };
-			String[] ids = {"Kb_Id", "Rend_Id", "ReszeId", "ISBN", "Szerzo_Id"};
-			
 			int n = 0;
 			for (String tag : tags) {
 				NodeList nodeList = doc.getElementsByTagName(tag);
