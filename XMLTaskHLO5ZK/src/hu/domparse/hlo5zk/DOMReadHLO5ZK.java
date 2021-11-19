@@ -67,7 +67,7 @@ public class DOMReadHLO5ZK {
 				n++;
 			}
 			
-		// Hibakezel�s	
+		// Hibakezeles	
 		} catch (SAXException | IOException | ParserConfigurationException e) {
 			System.out.println("An error occured!\nError Message:\n" + e.getMessage());
 			e.printStackTrace();
