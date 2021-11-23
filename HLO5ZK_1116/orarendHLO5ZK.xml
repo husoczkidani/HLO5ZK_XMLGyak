@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
+<?xml-stylesheet type='text/xsl' href='orarendHLO5ZK.xsl'?>
+
 <orarend>
     <napok id="1" nev="Hétfő">
 	    <ora id="1" típus="elmelet" >

@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <h2>&Oacute;rarend</h2>
+        <table border="1">
+            <tr bgcolor="#9acd32">
+                <th style="text-align:left">targy</th><th style="text-align:left">hely</th><th style="text-align:left">oktato</th><th style="text-align:left">szak</th>
+            </tr>
+            <tr>
+                <td>Algoritmusok &eacute;s Viszg&aacute;latuk elm&eacute;let</td><td>A3 313.</td><td> Dr. H&aacute;zy Attila</td><td>Programtervező Informatika</td>
+            </tr>
+            <tr>
+                <td>Algoritmusok &eacute;s Viszg&aacute;latuk gyakorlat</td><td>A3 313.</td><td> Dr. H&aacute;zy Attila</td><td>Programtervező Informatika</td>
+            </tr>
+            <tr>
+                <td>WEB technologiak elm&eacute;let</td><td>A1 305.</td><td>Ag&aacute;rdi Anita</td><td>Programtervező Informatika</td>
+            </tr>
+            <tr>
+                <td>Mesters&eacute;ges Intelligencia elm&eacute;let</td><td>XXXII.</td><td>Dr. Dud&aacute;s L&aacute;szl&oacute;</td><td>Programtervező Informatika</td>
+            </tr>
+            <tr>
+                <td>XML adatkezel&eacute;s elm&eacute;let</td><td>I.</td><td>Dr. Bednarik L&aacute;szl&oacute;</td><td>Programtervező Informatika</td>
+            </tr>
+            <tr>
+                <td>XML adatkezel&eacute;s gyakorlat</td><td>Inf. 103.</td><td>Dr. Bednarik L&aacute;szl&oacute;</td><td>Programtervező Informatika</td>
+            </tr>
+            <tr>
+                <td>Angol nyelvvizsga felk&eacute;sz&iacute;tő</td><td>A1 226.</td><td>Dork&oacute; D&oacute;ra</td><td>Programtervező Informatika</td>
+            </tr>
+            <tr>
+                <td>WEB technol&oacute;gi&aacute;k gyakorlat</td><td>Inf. 103.</td><td>Ag&aacute;rdi Anita</td><td>Programtervező Informatika</td>
+            </tr>
+            <tr>
+                <td>Mesters&eacute;ges Intelligencia gyakorlat</td><td>Inf. 15.</td><td>Dr. Dud&aacute;s L&aacute;szl&oacute;</td><td>Programtervező Informatika</td>
+            </tr>
+            <tr>
+                <td>V&aacute;llalati Inform&aacute;ci&oacute;s Rendszerek elm&eacute;let</td><td>Inf. 103.</td><td>Dr. Sasv&aacute;ri P&eacute;ter</td><td>Programtervező Informatika</td>
+            </tr>
+            <tr>
+                <td>V&aacute;llalati Inform&aacute;ci&oacute;s Rendszerek gyakorlat</td><td>Inf. 103.</td><td>Dr. Sasv&aacute;ri P&eacute;ter</td><td>Programtervező Informatika</td>
+            </tr>
+        </table>
+    </body>
+</html>
