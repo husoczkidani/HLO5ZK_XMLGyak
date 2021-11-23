@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <h2>Classroom:</h2>
+        	
+        <p>
+              Vezet&eacute;kn&eacute;v: <span style="color:#ff0000">Husoczki</span>
+            <br>
+              Keresztn&eacute;v: <span style="color:#00ff00">Daniel</span>
+            <br>
+              Becen&eacute;v: <span style="color:#0000ff">Dani</span>
+            <br>
+              Fizet&eacute;s: <span style="color:#00ffff">50000000</span>
+            <br>
+        </p>
+        	
+        <p>
+              Vezet&eacute;kn&eacute;v: <span style="color:#ff0000">Ero</span>
+            <br>
+              Keresztn&eacute;v: <span style="color:#00ff00">Jeno</span>
+            <br>
+              Becen&eacute;v: <span style="color:#0000ff">Jani</span>
+            <br>
+              Fizet&eacute;s: <span style="color:#00ffff">250000</span>
+            <br>
+        </p>
+        	
+        <p>
+              Vezet&eacute;kn&eacute;v: <span style="color:#ff0000">Mezga</span>
+            <br>
+              Keresztn&eacute;v: <span style="color:#00ff00">Geza</span>
+            <br>
+              Becen&eacute;v: <span style="color:#0000ff">Gezus</span>
+            <br>
+              Fizet&eacute;s: <span style="color:#00ffff">350000</span>
+            <br>
+        </p>
+        
+    </body>
+</html>
