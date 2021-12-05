@@ -29,7 +29,7 @@ public class DOMReadHLO5ZK {
 			Document doc = docBuilder.parse(xmlFile);
 			doc.getDocumentElement().normalize();
 			
-			//Gyaker elem kiirasa
+			//Gyoker elem kiirasa
 			System.out.println("Root element: " + doc.getDocumentElement().getNodeName() + "\n");
 			
 			//Elemek kiiratasa
@@ -54,7 +54,7 @@ public class DOMReadHLO5ZK {
 						for (int j = 0; j < childNodes.getLength(); j++) {
 							if (!(childNodes.item(j).getTextContent().trim().equals(""))) {
 								
-								//Formalas
+								//Szöveg formázása
 								text = childNodes.item(j).getTextContent().trim();
 								text = text.replaceAll("\\n", ", ").replaceAll("\\s+", " ");
 								

@@ -31,62 +31,91 @@ public class DOMQueryHLO5ZK {
 			Document doc = docBuilder.parse(xmlFile);
 			doc.getDocumentElement().normalize();
 			
-			// XPath objektum létrehozása
-			XPath xPath = XPathFactory.newInstance().newXPath();
+			System.out.println("Könyvek melyek több mint 250 oldalasak:\n-------------------------");
+			NodeList konyvek = doc.getElementsByTagName("Konyv");
 			
-			// Az osszes konyv 
-			String expression = "/Rendelesek/Konyv";
-			
-			// Az utolso szerzo
-			//String expression = "/Rendelesek/Szerzo[position()<2]";
-			
-			//
-			//String expression = "/Rendelesek/Konyv[Oldalszam>250]";
-			
-			
-			//Query
-			NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(doc, XPathConstants.NODESET);
-			
-			//Eredmeny
-			for (int j = 0; j < nodeList.getLength(); j++) {
-				Node node = nodeList.item(j);
-				System.out.println("\nElem típusa: " + node.getNodeName());
-				Node nNode = nodeList.item(j);
-				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-					Element elem = (Element)nNode;
-					
-					//Azonosito
-					int idNum = 0;
-					String tag = elem.getNodeName();
-					for(int t = 0; t < getIds.length; t++) {
-						if(getIds[t].equals(tag)) {
-							idNum = t+1;
-						}
-					}
-					String id = elem.getAttribute(getIds[idNum]);
-					System.out.println(getIds[idNum]+": " + id);
-					
-					//Tulajdonsagok
-					String text = "";
-					NodeList childNodes = elem.getChildNodes();
-					for (int k = 0; k < childNodes.getLength(); k++) {
-						if (!(childNodes.item(k).getTextContent().trim().equals(""))) {
+			for(int i = 0; i<konyvek.getLength();i++) {
+				Element konyv = (Element)konyvek.item(i);
+				NodeList childNodes = konyv.getChildNodes();
+				for(int j = 0; j<childNodes.getLength();j++) {
+					Node childNode = childNodes.item(j);
+					if(childNode.getNodeName().equals("Oldalszam")) {
+						if(Integer.parseInt(childNode.getTextContent()) > 250) {
 							
-							//Formalas
-							text = childNodes.item(k).getTextContent().trim();
-							text = text.replaceAll("\\n", ", ").replaceAll("\\s+", " ");
-							
-							System.out.println(childNodes.item(k).getNodeName() + ": " + text);
+							writeId(konyv,getIds);
+							printChildNodes(konyv);
 						}
 					}
 				}
-				System.out.println();
 			}
+			
+			System.out.println("sz01 -es azonosítójú szerző:\n-------------------------");
+			NodeList szerzok = doc.getElementsByTagName("Szerzo");
+			
+			for(int i = 0; i<szerzok.getLength();i++) {
+				Element szerzo = (Element)szerzok.item(i);
+				if(szerzo.getAttribute("Szerzo_Id").equals("sz01")) {
+					writeId(szerzo,getIds);
+					printChildNodes(szerzo);
+				}
+			}
+			
+			System.out.println("Sátoraljaújhelyi könyvesboltok:\n-------------------------");
+			NodeList konyvesboltok = doc.getElementsByTagName("Konyvesbolt");
+			
+			for(int i = 0; i< konyvesboltok.getLength(); i++) {
+				Element konyvesbolt = (Element)konyvesboltok.item(i);
+				NodeList childNodes = konyvesbolt.getChildNodes();
+				for(int j = 0; j < childNodes.getLength(); j++) {
+					Node childNode = childNodes.item(j);
+					if(childNode.getNodeName().equals("Cim")) {
+						NodeList childChildNodes = childNode.getChildNodes();
+						for(int k = 0; k< childChildNodes.getLength();k++) {
+							Node childChildNode = childChildNodes.item(k);
+							if(childChildNode.getNodeName().equals("Telepules")) {
+								if(childChildNode.getTextContent().equals("Sátoraljaújhely")) {
+									writeId(konyvesbolt,getIds);
+									printChildNodes(konyvesbolt);
+								}
+							}
+						}
+					}
+				}
+			}
+			
 		}
 		// Esetleges hibák kezelése	
-		catch(ParserConfigurationException | IOException | SAXException | XPathExpressionException e) {
+		catch(IOException | ParserConfigurationException | SAXException e) {
 			System.out.println("An error occured!\nError Message:\n" + e.getMessage());
 			e.printStackTrace();
 		}
+	}
+	// A kiválasztott element Id-jének a kiírása
+	private static void writeId(Element elem, String[]getIds) {
+		int idNum = 0;
+		String tag = elem.getNodeName();
+		for(int t = 0; t < getIds.length; t++) {
+			if(getIds[t].equals(tag)) {
+				idNum = t+1;
+			}
+		}
+		String id = elem.getAttribute(getIds[idNum]);
+		System.out.println(getIds[idNum]+": " + id);
+	}
+	// A kiválasztott element Tulajdonságainak a kiírása
+	private static void printChildNodes(Element elem) {
+		String text = "";
+		NodeList childNodes = elem.getChildNodes();
+		for (int k = 0; k < childNodes.getLength(); k++) {
+			if (!(childNodes.item(k).getTextContent().trim().equals(""))) {
+				
+				//Szöveg formázása
+				text = childNodes.item(k).getTextContent().trim();
+				text = text.replaceAll("\\n", ", ").replaceAll("\\s+", " ");
+				
+				System.out.println(childNodes.item(k).getNodeName() + ": " + text);
+			}
+		}
+		System.out.println("");
 	}
 }
