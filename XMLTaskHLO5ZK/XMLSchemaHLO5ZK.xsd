@@ -10,8 +10,54 @@
                 <xs:element name="Resze" type="reszeType" minOccurs="1" maxOccurs="unbounded"/>
                 <xs:element name="Konyv" type="konyvType" minOccurs="1" maxOccurs="unbounded"/>
                 <xs:element name="Szerzo" type="szerzoType" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Konyvkiado" type="kiadoType" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
+        <xs:key name="Kb_Id">
+			<xs:selector xpath="Konyvesbolt"/>
+			<xs:field xpath="@Kb_Id"/>
+		</xs:key>
+        <xs:key name="Rend_Id">
+			<xs:selector xpath="Rendeles"/>
+			<xs:field xpath="@Rend_Id"/>
+		</xs:key>
+        <xs:key name="ReszeId">
+			<xs:selector xpath="Resze"/>
+			<xs:field xpath="@ReszeId"/>
+		</xs:key>
+        <xs:key name="ISBN">
+			<xs:selector xpath="Konyv"/>
+			<xs:field xpath="@ISBN"/>
+		</xs:key>
+        <xs:key name="Szerzo_Id">
+			<xs:selector xpath="Szerzo"/>
+			<xs:field xpath="@Szerzo_Id"/>
+		</xs:key>
+        <xs:key name="Kiado_Id">
+			<xs:selector xpath="Konyvkiado"/>
+			<xs:field xpath="@Kiado_Id"/>
+		</xs:key>
+
+        <xs:keyref name="Konyvesbolt-Rendeles" refer="Kb_Id">
+			<xs:selector xpath="Rendeles/Kb_Id"/>
+            <xs:field xpath="."/>
+		</xs:keyref>
+        <xs:keyref name="Resze-Rendeles" refer="Rend_Id">
+			<xs:selector xpath="Resze/Rend_Id"/>
+            <xs:field xpath="."/>
+		</xs:keyref>
+        <xs:keyref name="Resze-Konyv" refer="ISBN">
+			<xs:selector xpath="Resze/ISBN"/>
+            <xs:field xpath="."/>
+		</xs:keyref>
+        <xs:keyref name="Konyv-Szerzo" refer="Szerzo_Id">
+			<xs:selector xpath="Konyv/Szerzo_Id"/>
+            <xs:field xpath="."/>
+		</xs:keyref>
+        <xs:keyref name="Konyvkiado-Konyv" refer="ISBN">
+			<xs:selector xpath="Konyvkiado/ISBN"/>
+            <xs:field xpath="."/>
+		</xs:keyref>
     </xs:element>
 
     <xs:complexType name="konyvesboltType">
@@ -99,4 +145,12 @@
             <xs:pattern value="([a-zA-Z])*[0-9][0-9]"/>
         </xs:restriction>
     </xs:simpleType>
+
+    <xs:complexType name="kiadoType">
+        <xs:sequence>
+            <xs:element name="ISBN" type="xs:integer"/>
+            <xs:element name="Kiado_nev" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="Kiado_Id" type="idType" use="required"/>
+    </xs:complexType>
 </xs:schema>

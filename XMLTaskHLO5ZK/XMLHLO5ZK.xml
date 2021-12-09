@@ -165,7 +165,7 @@ xsi:noNamespaceSchemaLocation="XMLSchemaHLO5ZK.xsd">
         <Kiad_datum>08/23/2020</Kiad_datum>
         <Cim>Adobe rejtelmei</Cim>
         <Oldalszam>256</Oldalszam>
-        <Szerzo_Id>sz01</Szerzo_Id>
+        <Szerzo_Id>sz03</Szerzo_Id>
     </Konyv>
 
     <Konyv ISBN="9782871235722">
@@ -207,5 +207,20 @@ xsi:noNamespaceSchemaLocation="XMLSchemaHLO5ZK.xsd">
             <Email>husoczkidaniel@gmail.com</Email>
         </Elerhetoseg>
     </Szerzo>
+
+    <Konyvkiado Kiado_Id="kiad01">
+        <ISBN>9788875123422</ISBN>
+        <Kiado_nev>Hétszínvirág Kiadó</Kiado_nev>
+    </Konyvkiado>
+
+    <Konyvkiado Kiado_Id="kiad02">
+        <ISBN>9782394257829</ISBN>
+        <Kiado_nev>Genius Kiadó</Kiado_nev>
+    </Konyvkiado>
+
+    <Konyvkiado Kiado_Id="kiad03">
+        <ISBN>9789631366822</ISBN>
+        <Kiado_nev>Micsoda Könyvkiadó</Kiado_nev>
+    </Konyvkiado>
 
 </Rendelesek>
